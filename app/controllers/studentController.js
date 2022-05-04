@@ -1,10 +1,15 @@
 const Reader = require('../utils/reader');
+const StudentService = require('../services/studentService');
 
 class StudentController {
     static getAllStudents() {
-        const students = Reader.readJSONfile('data.json');
-        const allStudents = StudentService.getAllStudents(students);
-        return allStudents;
+        return Reader.readJSONfile('data.json');
+    }
+    
+    static getEmailOfStudentWithCertification(certification) {
+        const students = StudentController.getAllStudents()
+        const studentsWithCertification = StudentService.getEmailOfStudentWithCertification(students, certification);
+        return studentsWithCertification;
     }
 }
 
