@@ -17,6 +17,11 @@ app.get('/students/certified', (req, res) => {
     res.json(StudentController.getEmailOfStudentWithCertification())
 })
 
+app.get('/students/credits/:credits', (req, res) => {
+    const credits = req.params.credits;
+    res.json(StudentController.getRecibeNumberOfCredits(credits))
+});
+
 app.listen(port, () => {
     console.log(`Visual Thinking API listen on port ${port}!`)
 });
