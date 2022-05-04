@@ -1,11 +1,11 @@
- name: Run Tests in my project every push on GitHub
+name: Run Tests in my project every push on GitHub
 
- on: [push]
+on: [push]
 
- jobs:
- build:
-     runs-on: ubuntu-latest
-     steps:
-     - uses: actions/checkout@v1
-     - name: Run Jest
-     uses: stefanoeb/jest-action@1.0.3
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run Jest
+      uses: stefanoeb/jest-action@1.0.3
