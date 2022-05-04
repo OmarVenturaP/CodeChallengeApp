@@ -11,6 +11,12 @@ class StudentController {
         const studentsWithCertification = StudentService.getEmailOfStudentWithCertification(students, certification);
         return studentsWithCertification;
     }
+
+    static getRecibeNumberOfCredits(credits){
+        const students = StudentController.getAllStudents()
+        return StudentService.validationOfCredits(students, credits);
+    }
+    
 }
 
 module.exports = StudentController;
