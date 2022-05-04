@@ -13,6 +13,10 @@ app.get('/students', (req, res) => {
     res.json(StudentController.getAllStudents())
 });
 
+app.get('/students/certified', (req, res) => {
+    res.json(StudentController.getEmailOfStudentWithCertification())
+})
+
 app.listen(port, () => {
     console.log(`Visual Thinking API listen on port ${port}!`)
 });
