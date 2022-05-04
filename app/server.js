@@ -5,19 +5,19 @@ const app = express();
 app.use(express.json());
 const port = 3000;
 
-app.get("/", (req, res) => {
+app.get("/v1/", (req, res) => {
     res.json("API of Visual Thinking welcome");
 });
 
-app.get("/students", (req, res) => {
+app.get("/v1/students", (req, res) => {
     res.json(StudentController.getAllStudents());
 });
 
-app.get("/students/certified", (req, res) => {
+app.get("/v1/students/certified", (req, res) => {
     res.json(StudentController.getEmailOfStudentWithCertification());
 });
 
-app.get("/students/credits/:credits", (req, res) => {
+app.get("/v1/students/credits/:credits", (req, res) => {
     const credits = req.params.credits;
     res.json(StudentController.getRecibeNumberOfCredits(credits));
 });
