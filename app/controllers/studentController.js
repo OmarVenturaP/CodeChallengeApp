@@ -6,9 +6,9 @@ class StudentController {
         return Reader.readJSONfile('data.json');
     }
     
-    static getEmailOfStudentWithCertification(certification) {
+    static getEmailOfStudentWithCertification() {
         const students = StudentController.getAllStudents()
-        const studentsWithCertification = StudentService.getEmailOfStudentWithCertification(students, certification);
+        const studentsWithCertification = StudentService.getEmailOfStudentWithCertification(students);
         return studentsWithCertification;
     }
 

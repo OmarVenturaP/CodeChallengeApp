@@ -3,8 +3,8 @@ class StudentService {
         return students;
     }
 
-    static getEmailOfStudentWithCertification(students, certification) {
-        const studentsWithCertification = students.filter((student) => student.haveCertification == certification);
+    static getEmailOfStudentWithCertification(students) {
+        const studentsWithCertification = students.filter((student) => student.haveCertification == true);
         const emailsOfStudentsWithCertification = studentsWithCertification.map((student) => student.email);    
         return emailsOfStudentsWithCertification;
     }
