@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.json('API of Visual Thinking welcome')
 });
 
+app.get('/students', (req, res) => {
+    res.json(StudentController.getAllStudents())
+});
+
 app.listen(port, () => {
     console.log(`Visual Thinking API listen on port ${port}!`)
 });
