@@ -1,4 +1,4 @@
-# VisualThinkingApp | Project for LaunchX.
+# CodeChallengeApp | Project for LaunchX by OmarVentura.
 
 ## Requerimentos Code Challenge (Semana 4)
 
@@ -22,10 +22,10 @@ npm init
 
 ```mermaid
 graph TD;
-    VisualThinkingApp-->app-->utils;
+    CodeChallengeApp-->app-->utils;
     app-->controllers;
     app-->services;
-    VisualThinkingApp-->test-->controllers-test;
+    ViCodeChallengeApp-->test-->controllers-test;
     test-->services-test;
 ```
 Separamos los directorios para tener una estructura, separar las responsabilidades, los cuales estructuramos de la siguiente forma:
