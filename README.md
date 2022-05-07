@@ -25,7 +25,7 @@ graph TD;
     CodeChallengeApp-->app-->utils;
     app-->controllers;
     app-->services;
-    ViCodeChallengeApp-->test-->controllers-test;
+    CodeChallengeApp-->test-->controllers-test;
     test-->services-test;
 ```
 Separamos los directorios para tener una estructura, separar las responsabilidades, los cuales estructuramos de la siguiente forma:
