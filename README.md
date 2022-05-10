@@ -3,7 +3,7 @@
 ## Tabla de Contenidos
 1. [Requerimentos Code Challenge](#id1)
 2. [Creación del proyecto](#id2)
-3. [ependencias usadas crear el proyecto](#id3)
+3. [Dependencias usadas crear el proyecto](#id3)
 4. [Estructura de directorio de App](#id4)
 5. [Archivos `app`](#id5)
 6. [Archivos `test`](#id6)
